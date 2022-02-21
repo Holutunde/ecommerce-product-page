@@ -1,4 +1,5 @@
 import React from 'react'
+import './Home.css'
 import Product1 from './image-product-1.jpg'
 import Product2 from './image-product-2.jpg'
 import Product3 from './image-product-3.jpg'
