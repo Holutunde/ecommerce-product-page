@@ -1,0 +1,49 @@
+.hm-container{
+    margin:0 200px 0 200px;
+    display: flex;
+   
+}
+.top-img{
+    width:350px;
+    height:350px;
+    border-radius: 10px;
+    
+}
+.sn-row{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.row-im{
+    height: 60px;
+    width: 60px;
+    border-radius: 20%;
+
+}
+.hm-right{
+    width: 43%;
+    margin-left: 150px;
+}
+.txt1{
+    color: hsl(26, 100%, 55%);
+    font-weight: bold;
+    font-size: 10px;
+} 
+.txt2{
+    font-weight: bold;
+    width:60%
+}
+.txt3{
+    font-size: 16px;
+}
+.hm-right-2{
+    width: 20%;
+    display:flex;
+}
+.amount{
+    font-weight: bold;
+}
+.dis{
+    font-size: 10px;
+    margin-left: 10px;
+}

@@ -5,40 +5,46 @@ import avatar from './image-avatar.png'
 import './navbar.css'
 
 const navbar = () => {
-  const navigate = () => {
-    ;<Link to="/women">Women</Link>
-  }
   return (
-    <nav>
-      <div className="left-side-container">
-        <div className="left-side">
-          <h2 onClick={navigate} className="left-side-text">
-            Sneakers
-          </h2>
+    <div className="container">
+      <nav>
+        <div className="left-side-container">
+          <div className="left-side">
+            <h2 className="left-side-text">Sneakers</h2>
+          </div>
+          <div className="middle">
+            <Link className="link-text" to="/collections">
+              <li>Collections</li>
+            </Link>
+            <Link className="link-text" to="/men">
+              <li>Men</li>
+            </Link>
+            <Link className="link-text" to="/women">
+              <li>Women</li>
+            </Link>
+            <Link className="link-text" to="/about">
+              <li>About</li>
+            </Link>
+            <Link className="link-text" to="/collections">
+              <li>Contact</li>
+            </Link>
+          </div>
         </div>
-        <div className="middle">
-          <Link className="link-text" to="/collections">
-            <li>Collections</li>
+        <div className="right-side-container">
+          <img
+            src={cart}
+            alt=""
+            height="20"
+            width="20"
+            style={{ marginRight: 15, marginTop: 10 }}
+          />
+          <Link className="link-text" to="/women">
+            <img src={avatar} alt="" height="40" width="40" />
           </Link>
-          <li>
-            <Link to="/men">Men</Link>
-          </li>
-          <li>
-            <Link to="/women">Women</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
         </div>
-      </div>
-      <div className="right-side-container">
-        <img src={cart} alt="" height="20" width="20" />
-        <img src={avatar} alt="" height="20" width="20" />
-      </div>
-    </nav>
+      </nav>
+      <div className="line"></div>
+    </div>
   )
 }
 
