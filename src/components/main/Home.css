@@ -28,13 +28,19 @@
     color: hsl(26, 100%, 55%);
     font-weight: bold;
     font-size: 10px;
+    font-family: "Kumbh Sans";
 } 
 .txt2{
     font-weight: bold;
+    font-family: "Kumbh Sans";
     width:60%
 }
 .txt3{
-    font-size: 16px;
+    font-size: 12px;
+    line-height: 2em;
+    font-family: "Kumbh Sans";
+    color: hsl(219, 9%, 45%);
+    width: 88%;
 }
 .hm-right-2{
     width: 20%;
@@ -42,8 +48,10 @@
 }
 .amount{
     font-weight: bold;
+    font-family: "Kumbh Sans";
 }
 .dis{
     font-size: 10px;
     margin-left: 10px;
+    font-family: "Kumbh Sans";
 }

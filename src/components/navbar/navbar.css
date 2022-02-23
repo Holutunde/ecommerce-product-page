@@ -10,6 +10,10 @@ nav{
     display: flex;
     justify-content: space-between;
 }
+.left-side-text{
+    font-family: "Kumbh Sans";
+    font-weight: 700;
+}
 .middle{
     display: flex;
     width:100%;
@@ -23,6 +27,7 @@ nav{
     justify-content: space-between;
 }
 .link-text{
+    font-family: "Kumbh Sans";
     text-decoration: none;
     list-style-type: none;
     margin-right: 15px;

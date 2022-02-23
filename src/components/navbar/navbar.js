@@ -10,7 +10,7 @@ const navbar = () => {
       <nav>
         <div className="left-side-container">
           <div className="left-side">
-            <h2 className="left-side-text">Sneakers</h2>
+            <h2 className="left-side-text">sneakers</h2>
           </div>
           <div className="middle">
             <Link className="link-text" to="/collections">
