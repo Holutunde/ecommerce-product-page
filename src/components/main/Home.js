@@ -26,11 +26,12 @@ const Home = () => {
           a durable rubber outisde sole, they'll withstand anything the weather
           can offer{' '}
         </p>
-        <div className="hm-right-2">
-          <h3 className="amount">$125.00</h3>
-          <div className="dis-cont">
+        <div className="price">
+          <div className="hm-right-2">
+            <h3 className="amount">$125.00</h3>
             <h4 className="dis">50%</h4>
           </div>
+          <h4 className="old">$250.00</h4>
         </div>
         <div className="hm-right-3">
           <div className="btn-cont">
