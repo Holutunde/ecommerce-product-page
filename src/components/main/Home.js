@@ -31,7 +31,19 @@ const Home = () => {
         </div>
         <div className="hm-right-3">
           <div className="btn-cont">
-            <button onClick={() => setCartNo(cartNo - 1)}>-</button>
+            <button
+              onClick={() =>
+                setCartNo(() => {
+                  if (cartNo <= 0) {
+                    return 0
+                  } else {
+                    return cartNo - 1
+                  }
+                })
+              }
+            >
+              -
+            </button>
             <button>{cartNo}</button>
             <button onClick={() => setCartNo(cartNo + 1)}>+</button>
           </div>

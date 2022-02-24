@@ -23,6 +23,7 @@
 .hm-right{
     width: 43%;
     margin-left: 150px;
+    margin-top: 40px;
 }
 .txt1{
     color: hsl(26, 100%, 55%);
@@ -54,4 +55,17 @@
     font-size: 10px;
     margin-left: 10px;
     font-family: "Kumbh Sans";
+}
+.btn-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color:  hsl(223, 64%, 98%) ;
+    width: 20%;
+}
+button{
+    border: none;
+    background-color:  hsl(223, 64%, 98%) ;
 }
