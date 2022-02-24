@@ -18,6 +18,9 @@ const SliderContextProvider = ({ children }) => {
       setSliderIndex(3)
     }
   }
+  useEffect(() => {
+    showSlides()
+  }, [sliderIndex])
 
   const data = {
     sliderdata,
@@ -29,3 +32,4 @@ const SliderContextProvider = ({ children }) => {
     <SliderContext.Provider value={data}>{children}</SliderContext.Provider>
   )
 }
+export { SliderContext, SliderContextProvider, useContext }

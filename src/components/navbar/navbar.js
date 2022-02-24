@@ -2,9 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import cart from './icon-cart.svg'
 import avatar from './image-avatar.png'
-import './navbar.css'
+import { CartContext, useContext } from '../../Util/CartContext'
+import './Navbar.css'
 
-const navbar = () => {
+const Navbar = () => {
+  const { itemNumber } = useContext(CartContext)
   return (
     <div className="container">
       <nav>
@@ -31,16 +33,18 @@ const navbar = () => {
           </div>
         </div>
         <div className="right-side-container">
-          <img
-            src={cart}
-            alt=""
-            height="20"
-            width="20"
-            style={{ marginRight: 15, marginTop: 10 }}
-          />
-          <Link className="link-text" to="/women">
-            <img src={avatar} alt="" height="40" width="40" />
-          </Link>
+          <d3iv className="cart-wrapper">
+            {itemNumber > 0 ? <p>{itemNumber}</p> : null}
+            <img
+              src={cart}
+              alt=""
+              height="20"
+              width="20"
+              style={{ marginRight: 30, marginTop: 10 }}
+            />
+          </d3iv>
+
+          <img src={avatar} alt="" height="40" width="40" />
         </div>
       </nav>
       <div className="line"></div>
@@ -48,4 +52,4 @@ const navbar = () => {
   )
 }
 
-export default navbar
+export default Navbar
