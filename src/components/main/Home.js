@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Home.css'
+import { AiOutlineShoppingCart } from 'react-icons/ai'
 import Product1 from './image-product-1.jpg'
 import Product2 from './image-product-2.jpg'
 import Product3 from './image-product-3.jpg'
@@ -55,8 +56,7 @@ const Home = () => {
             className="add-cart"
             onClick={() => setItemNumber(itemNumber + cartNo)}
           >
-            {' '}
-            Add to cart{' '}
+            <AiOutlineShoppingCart className="icon" /> Add to cart{' '}
           </button>
         </div>
       </div>
