@@ -6,20 +6,13 @@ import Product1 from '../../images/image-product-1.jpg'
 import Product2 from '../../images/image-product-2.jpg'
 import Product3 from '../../images/image-product-3.jpg'
 import Product4 from '../../images/image-product-4.jpg'
+import Slider from '../../Slider/Slider'
 const Home = () => {
   const { itemNumber, setItemNumber } = useContext(CartContext)
   const [cartNo, setCartNo] = useState(0)
   return (
     <div className="hm-container">
-      <div className="hm-left">
-        <img src={Product1} className="top-img" alt="" />
-        <div className="sn-row">
-          <img src={Product1} alt="" className="row-im" />
-          <img src={Product2} alt="" className="row-im" />
-          <img src={Product3} alt="" className="row-im" />
-          <img src={Product4} alt="" className="row-im" />
-        </div>
-      </div>
+      <Slider />
       <div className="hm-right">
         <h3 className="txt1">SNEAKER COMPANY</h3>
         <h3 className="txt2">Fall Limited Edition Sneakers</h3>
