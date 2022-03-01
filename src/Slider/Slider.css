@@ -18,12 +18,6 @@
     .slider-previous{
       left: 8px;
     }
-    .sliderImage{
-      width: 100%;
-      height: 280px;
-      cursor: pointer;
-      object-fit : cover;
-    
-    }
+
   
   
