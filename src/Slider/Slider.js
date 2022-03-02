@@ -14,7 +14,8 @@ const Slider = () => {
   return (
     <div className="slider">
       <div className="slider-upperContainer">
-        <div className="slider-previous" onClick={handlePrevious}>
+        my woman
+        {/* <div className="slider-previous" onClick={handlePrevious}>
           <img src={previousIcon} alt="next-icon" />
         </div>
         <div className="slide-img">
@@ -26,7 +27,7 @@ const Slider = () => {
         </div>
         <div className="slider-next" onClick={handleNext}>
           <img src={nextIcon} alt="previous-icon" />
-        </div>
+        </div> */}
       </div>
     </div>
   )

@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { createContext, useState, useEffect, useContext } from 'react'
 import Product1 from '../images/image-product-1.jpg'
 import Product2 from '../images/image-product-2.jpg'
@@ -18,9 +19,6 @@ const SliderContextProvider = ({ children }) => {
       setSliderIndex(3)
     }
   }
-  useEffect(() => {
-    showSlides()
-  }, [sliderIndex])
 
   const data = {
     sliderdata,

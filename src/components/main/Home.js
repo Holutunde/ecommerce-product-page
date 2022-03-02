@@ -12,7 +12,6 @@ const Home = () => {
   const [cartNo, setCartNo] = useState(0)
   return (
     <div className="hm-container">
-      <Slider />
       <div className="hm-right">
         <h3 className="txt1">SNEAKER COMPANY</h3>
         <h3 className="txt2">Fall Limited Edition Sneakers</h3>

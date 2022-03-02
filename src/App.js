@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
