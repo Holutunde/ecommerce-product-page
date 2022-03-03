@@ -15,6 +15,10 @@ const Home = () => {
   const [cartNo, setCartNo] = useState(0)
   const [sliderIndex, setSliderIndex] = useState(0)
 
+  const handleHover = (index) => {
+    setSliderIndex(index)
+  }
+
   const handleNext = () => {
     setSliderIndex(sliderIndex + 1)
   }
@@ -52,6 +56,32 @@ const Home = () => {
         </div>
         <div className="slider-next">
           <img src={nextIcon} alt="previous-icon" />
+        </div>
+        <div className="slider-bottomContainer">
+          <div
+            className={`${sliderIndex === 0 ? 'opacity' : ''}`}
+            onMouseOver={() => handleHover(0)}
+          >
+            <img src={Product1} alt="product1" className="bot-img" />
+          </div>
+          <div
+            className={`${sliderIndex === 1 ? 'opacity' : ''}`}
+            onMouseOver={() => handleHover(1)}
+          >
+            <img src={Product2} alt="product2" className="bot-img" />
+          </div>
+          <div
+            className={`${sliderIndex === 2 ? 'opacity' : ''}`}
+            onMouseOver={() => handleHover(2)}
+          >
+            <img src={Product3} alt="product3" className="bot-img" />
+          </div>
+          <div
+            className={`${sliderIndex === 3 ? 'opacity' : ''}`}
+            onMouseOver={() => handleHover(3)}
+          >
+            <img src={Product4} alt="product4" className="bot-img" />
+          </div>
         </div>
       </div>
       <div className="hm-right">

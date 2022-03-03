@@ -111,3 +111,35 @@ button{
     color: hsl(0, 0%, 100%);
     font-size: 18px;
 }
+.slider-next,.slider-previous{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top:40%;
+  }
+  .slider-next{
+    right: 8px;
+  }
+  .slider-previous{
+    left: 8px;
+  }
+  .slider-bottomContainer{
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+  }
+  .bot-img{
+      height: 65px;
+      width: 70px;
+      border-radius: 10%;
+
+  }
+  .opacity{
+    opacity: 0.5;
+  }
