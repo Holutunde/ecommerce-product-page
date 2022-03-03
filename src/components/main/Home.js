@@ -24,7 +24,13 @@ const Home = () => {
   }
 
   const handlePrevious = () => {
-    setSliderIndex(sliderIndex - 1)
+    setSliderIndex(() => {
+      if (sliderIndex <= 0) {
+        return 0
+      } else {
+        return sliderIndex - 1
+      }
+    })
   }
 
   const showSlides = () => {
