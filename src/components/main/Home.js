@@ -1,26 +1,55 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import './Home.css'
 import { CartContext } from '../../Util/CartContext'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
 import previousIcon from '../../images/icon-previous.svg'
 import nextIcon from '../../images/icon-next.svg'
 import Product1 from '../../images/image-product-1.jpg'
-import useSlider from '../../hooks/useSlider'
 import Product2 from '../../images/image-product-2.jpg'
 import Product3 from '../../images/image-product-3.jpg'
 import Product4 from '../../images/image-product-4.jpg'
+
 const Home = () => {
+  const sliderdata = [Product1, Product2, Product3, Product4]
   const { itemNumber, setItemNumber } = useContext(CartContext)
   const [cartNo, setCartNo] = useState(0)
-  const { handleNext, handlePrevious } = useSlider()
+  const [sliderIndex, setSliderIndex] = useState(0)
+
+  const handleNext = () => {
+    setSliderIndex(sliderIndex + 1)
+  }
+
+  const handlePrevious = () => {
+    setSliderIndex(sliderIndex - 1)
+  }
+
+  const showSlides = () => {
+    if (sliderIndex > 3) {
+      setSliderIndex(0)
+    }
+    if (sliderIndex < 0) {
+      setSliderIndex(3)
+    }
+  }
+  useEffect(() => {
+    showSlides()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [sliderIndex])
 
   return (
     <div className="hm-container">
       <div className="hm-left">
-        <div className="slider-previous" onClick={handlePrevious}>
-          <img src={previousIcon} alt="next-icon" />
+        <div>{sliderIndex}</div>
+        <div className="slider-previous">
+          <img src={previousIcon} alt="next-icon" onClick={handlePrevious} />
         </div>
-        <img src={Product1} className="top-img" alt="" />
+        <div className="slide-img">
+          <img
+            className="top-img"
+            src={sliderdata[sliderIndex]}
+            alt="sliderimage"
+          />
+        </div>
         <div className="slider-next">
           <img src={nextIcon} alt="previous-icon" />
         </div>

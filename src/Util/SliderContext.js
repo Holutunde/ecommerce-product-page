@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect, useContext } from 'react'
+import { createContext, useState, useContext } from 'react'
 import Product1 from '../images/image-product-1.jpg'
 import Product2 from '../images/image-product-2.jpg'
 import Product3 from '../images/image-product-3.jpg'
@@ -18,10 +18,6 @@ const SliderContextProvider = ({ children }) => {
       setSliderIndex(3)
     }
   }
-  useEffect(() => {
-    showSlides()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [sliderIndex])
 
   const data = {
     sliderdata,
