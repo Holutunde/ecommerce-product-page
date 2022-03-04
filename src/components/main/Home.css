@@ -1,5 +1,5 @@
 .hm-container{
-    margin:0 200px 0 200px;
+    margin:0 200px ;
     display: flex;
     box-sizing: border-box;
 }
@@ -21,7 +21,7 @@
 
 }
 .hm-right{
-    width: 43%;
+    width: 50%;
     margin-left: 150px;
     margin-top: 40px;
 }
@@ -101,7 +101,7 @@ button{
     align-items: center;
     padding: 10px;
     font-weight: 700;
-    width: 100%;
+    width: 70%;
 }
 .add-cart:hover{
     opacity: 0.7;
@@ -141,5 +141,5 @@ button{
 
   }
   .opacity{
-    opacity: 0.5;
+    opacity: 0.4;
   }

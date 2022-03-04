@@ -20,7 +20,13 @@ const Home = () => {
   }
 
   const handleNext = () => {
-    setSliderIndex(sliderIndex + 1)
+    setSliderIndex(() => {
+      if (sliderIndex > 2) {
+        return 3
+      } else {
+        return sliderIndex + 1
+      }
+    })
   }
 
   const handlePrevious = () => {
@@ -49,7 +55,6 @@ const Home = () => {
   return (
     <div className="hm-container">
       <div className="hm-left">
-        <div>{sliderIndex}</div>
         <div className="slider-previous">
           <img src={previousIcon} alt="next-icon" onClick={handlePrevious} />
         </div>
@@ -61,7 +66,7 @@ const Home = () => {
           />
         </div>
         <div className="slider-next">
-          <img src={nextIcon} alt="previous-icon" />
+          <img src={nextIcon} alt="previous-icon" onClick={handleNext} />
         </div>
         <div className="slider-bottomContainer">
           <div
